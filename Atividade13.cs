@@ -11,7 +11,7 @@ namespace ALTURA
 
             if (A <= 160)
             {
-                Console.WriteLine("Você baixo(a)");
+                Console.WriteLine("Você é baixo(a)");
             }
             else
             {
