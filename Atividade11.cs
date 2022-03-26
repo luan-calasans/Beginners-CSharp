@@ -5,7 +5,7 @@ namespace MeuNamespace
     {
         static void Main(string[] args)
         {
-        // DUP que exiba o maior entre três números digitados via teclado
+        // DESENVOLVA UM PROGRAMA QUE EXIBA O MAIOR ENTRE TRÊS NÚMEROS DIGITADOS VIA TECLADO
             Console.WriteLine("========================");
             Console.WriteLine("QUAL É O MAIOR NÚMERO?");
             Console.WriteLine("========================");
