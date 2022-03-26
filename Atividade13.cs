@@ -6,6 +6,7 @@ namespace ALTURA
     {
         static void Main(string[] args)
         {
+            // DESENVOLVA UM PROGRAMA QUE RECEBA VIA TECLADO A ALTURA (cm) DO USUÁRIO E CLASSIFIQUE-O DE ACORDO COM SUA ALTURA
             Console.Write("Digite sua altura (centímetros): ");
             int A = int.Parse(Console.ReadLine());
 
