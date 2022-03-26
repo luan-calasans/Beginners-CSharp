@@ -10,6 +10,7 @@ namespace IDADE
     {
         static void Main(string[] args)
         {
+            // DESENVOLVA UM PROGRAMA QUE RECEBA VIA TECLADO A IDADE DO USUÁRIO E CLASSIFIQUE-O DE ACORDO COM SUA IDADE.
             Console.Write("Digite sua idade: ");
             int idade = int.Parse(Console.ReadLine()); 
 
