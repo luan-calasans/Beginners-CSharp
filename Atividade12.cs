@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ORDEM_DECRESCENTE
+namespace atividades
 {
-    internal class Program
+    internal class ex12
     {
         static void Main(string[] args)
         {
