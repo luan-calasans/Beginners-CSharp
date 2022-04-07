@@ -1,7 +1,8 @@
 using System;
-namespace MeuNamespace
+
+namespace atividades
 {
-    public class MinhaAplicacao
+    public class ex05
     {
         static void Main(string[] args)
         {
