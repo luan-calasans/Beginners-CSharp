@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDADE
+namespace atividades
 {
-    internal class Program
+    internal class ex15
     {
         static void Main(string[] args)
         {
