@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
-namespace ALTURA
+namespace atividades
 {
-    internal class Program
+    internal class ex13
     {
         static void Main(string[] args)
         {
