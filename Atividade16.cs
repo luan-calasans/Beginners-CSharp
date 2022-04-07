@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TRIANGULO
+namespace atividades
 {
-    internal class Program
+    internal class ex16
     {
         static void Main(string[] args)
         {
