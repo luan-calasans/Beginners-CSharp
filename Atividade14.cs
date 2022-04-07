@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Altura
+namespace atividades
 {
-    class Program
+    class ex14
     {
         static void Main(string[] args)
         {
