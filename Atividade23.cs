@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_lista03_ex08
+namespace atividades
 {
-    class C37461_lista03_ex08
+    class ex23
     {
         static void Main(string[] args)
         {
