@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_lista03_ex09
+namespace atividades
 {
-    class C37461_lista03_ex09
+    class ex24
     {
         static void Main(string[] args)
         {
