@@ -14,7 +14,6 @@ namespace Atividades
                Desenvolva um programa que receba três valores via teclado e no final exiba a soma. 
                Ps: utilizando somente duas variáveis
              */
-
             double userData = 0, sum = 0;
             try
             {
