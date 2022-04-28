@@ -19,38 +19,37 @@ namespace Atividades
             {
                 Console.Write("Digite um número: ");
                 bigger = double.Parse(Console.ReadLine());
+                if (userData > bigger)
+                {
+                    bigger = userData;
+                }
+                Console.Write("Digite um número: ");
+                userData = double.Parse(Console.ReadLine());
+
+                if (userData > bigger)
+                {
+                    bigger = userData;
+                }
+                Console.Write("Digite um número: ");
+                userData = double.Parse(Console.ReadLine());
+
+                if (userData > bigger)
+                {
+                    bigger = userData;
+                }
+                Console.Write("Digite um número: ");
+                userData = double.Parse(Console.ReadLine());
+
+                if (userData > bigger)
+                {
+                    bigger = userData;
+                }
             }
             catch
             {
                 Console.WriteLine("Digite apenas números!");
                 Console.ReadLine();
                 return;
-            }
-
-            if (userData > bigger)
-            {
-                bigger = userData;
-            }
-            Console.Write("Digite um número: ");
-            userData = double.Parse(Console.ReadLine());
-
-            if (userData > bigger)
-            {
-                bigger = userData;
-            }
-            Console.Write("Digite um número: ");
-            userData = double.Parse(Console.ReadLine());
-
-            if (userData > bigger)
-            {
-                bigger = userData;
-            }
-            Console.Write("Digite um número: ");
-            userData = double.Parse(Console.ReadLine());
-
-            if (userData > bigger)
-            {
-                bigger = userData;
             }
 
             Console.WriteLine($"O maior é: {bigger}");
