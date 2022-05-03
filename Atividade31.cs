@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atividades
 {
-    internal class Program
+    internal class ex31
     {
         static void Main(string[] args)
         {
