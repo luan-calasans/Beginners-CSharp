@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_lista03_ex02
+namespace Atividades
 {
-    internal class C37461_lista03_ex02
+    internal class ex36
     {
         static void Main(string[] args)
         {
