@@ -57,7 +57,7 @@ namespace Atividades
                 Console.WriteLine("Digite apenas números positivos!");
                 return;
             }
-            Console.Write($"Maior valor = {highestValue}\nSoma dos valores = {sum}\nMédia dos valores = {average}");
+            Console.Write($"Maior valor = {highestValue}\nSoma dos valores = {sum.ToString("F")}\nMédia dos valores = {average.ToString("F")}");
             Console.ReadKey();
         }
     }
