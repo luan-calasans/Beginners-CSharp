@@ -14,8 +14,6 @@ namespace Atividades
             string gender;
             try
             {
-                Console.Write("'F' para feminino 'M' para masculino\nDigite seu gênero: ");
-                gender = Console.ReadLine();
                 do
                 {
                     Console.WriteLine("Digite apenas 'F' ou 'M'");
