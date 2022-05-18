@@ -19,13 +19,13 @@ namespace Atividades
                     Console.WriteLine("Digite apenas 'F' ou 'M'");
                     Console.Write("Digite seu gênero: ");
                     gender = Console.ReadLine();
-                } while (gender != "F" && gender != "M");
+                } while (gender != "F" && gender != "M" && gender != "f" && gender != "m");
 
                 if (gender == "M")
                 {
                     Console.Write("Seu gênero é Masculino!");
                 }
-                else 
+                else
                 {
                     Console.Write("Seu gênero é Feminino!");
                 }
