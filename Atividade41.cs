@@ -54,6 +54,7 @@ namespace Atividade
                     dadoUsuario = 0; contagem = 0; soma = 0; media = 0; menorTrinta = 0; somaCem = 0;
                     try
                     {
+                        Console.Clear();
                         while (contagem < 10)
                         {
                             Console.Write("Digite um valor: ");
