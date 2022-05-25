@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,24 +16,24 @@ namespace Atividade
                - Média dos demais
                E no final perguntar para o usuário se deseja refazer o programa
              */
-            double dadoUsuario, contagem = 0, soma = 0, media = 0, menorTrinta = 0, somaCem = 0;
-            string resposta;
+            double userData, count = 0, sum = 0, average = 0, under30 = 0, sum100 = 0;
+            string answer;
             try
             {
-                while (contagem < 10)
+                while (count < 10)
                 {
                     Console.Write("Digite um valor: ");
-                    dadoUsuario = double.Parse(Console.ReadLine());
-                    contagem++;
-                    soma += dadoUsuario;
-                    media = soma / contagem;
-                    if (dadoUsuario < 30)
+                    userData = double.Parse(Console.ReadLine());
+                    count++;
+                    sum += userData;
+                    average = sum / count;
+                    if (userData < 30)
                     {
-                        menorTrinta++;
+                        under30++;
                     }
-                    if (dadoUsuario > 100)
+                    if (userData > 100)
                     {
-                        somaCem += dadoUsuario;
+                        sum100 += userData;
                     }
                 }
             }
@@ -43,32 +43,32 @@ namespace Atividade
                 Console.ReadKey();
                 return;
             }
-            Console.Write($"Quantidade de números < 30: {menorTrinta}\nSoma dos valores > 100: {somaCem}\nMédia dos demais: {media}");
+            Console.Write($"Quantidade de números < 30: {under30}\nSoma dos valores > 100: {sum100}\nMédia dos demais: {average}");
             Console.Write("\n=======================");
             Console.Write("\nDigite\n[R] Refazer programa\n[E] Encerrar programa\n");
-            resposta = Console.ReadLine();
-            resposta = resposta.ToUpper();
-            switch (resposta)
+            answer = Console.ReadLine();
+            answer = answer.ToUpper();
+            switch (answer)
             {
                 case "R":
-                    dadoUsuario = 0; contagem = 0; soma = 0; media = 0; menorTrinta = 0; somaCem = 0;
+                    userData = 0; count = 0; sum = 0; average = 0; under30 = 0; sum100 = 0;
                     try
                     {
                         Console.Clear();
-                        while (contagem < 10)
+                        while (count < 10)
                         {
                             Console.Write("Digite um valor: ");
-                            dadoUsuario = double.Parse(Console.ReadLine());
-                            contagem++;
-                            soma += dadoUsuario;
-                            media = soma / contagem;
-                            if (dadoUsuario < 30)
+                            userData = double.Parse(Console.ReadLine());
+                            count++;
+                            sum += userData;
+                            average = sum / count;
+                            if (userData < 30)
                             {
-                                menorTrinta++;
+                                under30++;
                             }
-                            if (dadoUsuario > 100)
+                            if (userData > 100)
                             {
-                                somaCem += dadoUsuario;
+                                sum100 += userData;
                             }
                         }
                     }
@@ -78,7 +78,7 @@ namespace Atividade
                         Console.ReadKey();
                         return;
                     }
-                    Console.Write($"Quantidade de números < 30: {menorTrinta}\nSoma dos valores > 100: {somaCem}\nMédia dos demais: {media}");
+                    Console.Write($"Quantidade de números < 30: {under30}\nSoma dos valores > 100: {sum100}\nMédia dos demais: {average}");
                     break;
 
                 case "E":
