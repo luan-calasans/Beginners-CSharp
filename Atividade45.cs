@@ -11,7 +11,7 @@ namespace Atividades
         static void Main(string[] args)
         {
             /*
-                Receba 10 números via teclado e exiba:
+                Desenvolva um programa que receba 10 números via teclado e exiba:
                 - Maior
                 - Soma
                 - Média 
