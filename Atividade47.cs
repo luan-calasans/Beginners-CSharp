@@ -16,26 +16,26 @@ namespace prj37461_ListaFOR_ex01
                 b. A soma dos valores;
                 c. A média aritmética dos valores;
              */
-            double valor, maiorValor = 0, soma = 0, media;
+            double value, bigger = 0, sum = 0, average;
             try
             {
                 for (int i = 1; i < 11; i++)
                 {
                     Console.Write("Digite um valor: ");
-                    valor = double.Parse(Console.ReadLine());
-                    while (valor < 0)
+                    value = double.Parse(Console.ReadLine());
+                    while (value < 0)
                     {
                         Console.Write("Erro!\nDigite um valor: ");
-                        valor = double.Parse(Console.ReadLine());
+                        value = double.Parse(Console.ReadLine());
                     }
-                    if (maiorValor < valor)
+                    if (bigger < value)
                     {
-                        maiorValor = valor;
+                        bigger = value;
                     }
-                    soma += valor;
+                    sum += value;
                 }
-                media = soma / 10;
-                Console.Write($"Maior valor: {maiorValor}\nSoma dos valores: {soma}\nMédia: {media}");
+                average = sum / 10;
+                Console.Write($"Maior valor: {bigger}\nSoma dos valores: {sum}\nMédia: {average}");
                 Console.ReadKey();
             }
             catch
