@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_ListaFOR_ex01
+namespace Atividades
 {
-    internal class C37461_ListaFOR_ex01
+    internal class ex48
     {
         static void Main(string[] args)
         {
