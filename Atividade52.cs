@@ -24,7 +24,7 @@ namespace Atividades
                 {
                     storeOdd++;
                 }
-                Console.WriteLine($"Número inteiro: {numeroInteiro[i]}");
+                Console.WriteLine($"Número inteiro: {number[i]}");
             }
             average = storeOdd / number.Length;
             Console.ForegroundColor = ConsoleColor.Yellow; Console.WriteLine($"A média dos número ímpares é: {average}");
