@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_ListaVetores_ex02
+namespace Atividades
 {
-    internal class C37461_ListaVetores_ex02
+    internal class ex51
     {
         static void Main(string[] args)
         {
@@ -15,15 +15,15 @@ namespace prj37461_ListaVetores_ex02
                 que defina e escreva a soma de todos os elementos armazenados neste
                 vetor.  
              */
-            int[] numeroInteiro = new int[10];
-            int somaInteiros = 0;
+            int[] number = new int[10];
+            int sum = 0;
             for (int i = 0; i < 10; i++)
             {                
-                numeroInteiro[i] = i;
-                Console.WriteLine($"Número Inteiro: {numeroInteiro[i]}");
-                somaInteiros += numeroInteiro[i];
+                number[i] = i;
+                Console.WriteLine($"Número Inteiro: {number[i]}");
+                sum += number[i];
             }
-            Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine($"A soma dos números inteiros acima é igual a: {somaInteiros}");
+            Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine($"A soma dos números inteiros acima é igual a: {sum}");
             Console.ReadKey();
         }
     }
