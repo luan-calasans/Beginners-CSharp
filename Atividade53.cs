@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_ListaVetores_ex04
+namespace Atividades
 {
-    internal class C37461_ListaVetores_ex04
+    internal class ex53
     {
         static void Main(string[] args)
         {
@@ -15,26 +15,26 @@ namespace prj37461_ListaVetores_ex04
                 que defina o percentual de elementos pares e ímpares, respectivamente,
                 armazenados neste vetor.
              */
-            int[] numeroInteiro = new int[10];
-            double armazenaPar = 0, armazenaImpar = 0, percentualPar, percentualImpar;
+            int[] number = new int[10];
+            double storeEven = 0, storeOdd = 0, pcEven, pcOdd;
             for (int i = 0; i < 10; i++)
             {
-                numeroInteiro[i] = i;
-                if (numeroInteiro[i] % 2 == 0)
+                number[i] = i;
+                if (number[i] % 2 == 0)
                 {
-                    armazenaPar++;
+                    storeEven++;
                 }
                 else
                 {
-                    armazenaImpar++;
+                    storeOdd++;
                 }
-                Console.WriteLine($"Número inteiro: {numeroInteiro[i]}");
+                Console.WriteLine($"Número inteiro: {number[i]}");
             }
 
-            percentualPar = (armazenaPar * 100) / numeroInteiro.Length;
-            percentualImpar = (armazenaImpar * 100) / numeroInteiro.Length;
+            pcEven = (storeEven * 100) / number.Length;
+            pcOdd = (storeOdd * 100) / number.Length;
 
-            Console.ForegroundColor = ConsoleColor.DarkCyan; Console.Write($"Percentual de números pares: {percentualPar}%\nPercentual de números ímpares: {percentualImpar}%");
+            Console.ForegroundColor = ConsoleColor.DarkCyan; Console.Write($"Percentual de números pares: {pcEven}%\nPercentual de números ímpares: {pcOdd}%");
             Console.ReadKey();
         }
     }
