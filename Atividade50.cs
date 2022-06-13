@@ -16,17 +16,23 @@ namespace Atividades
                que são pares.
              */
             int[] number = new int[10];
-            int storeNumber = 0;
+            int binNumber = 0;
             for (int i = 0; i < 10; i++)
             {
-                number[i] = i;
-                Console.WriteLine($"Número inteiro: {number[i]}");
+                Console.Write("Digite um número inteiro positivo: ");
+                number[i] = int.Parse(Console.ReadLine());
+                while (number[i] < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red; Console.Write("ERRO! ");
+                    Console.ForegroundColor = ConsoleColor.Gray;  Console.Write("Digite um número inteiro positivo: ");
+                    number[i] = int.Parse(Console.ReadLine());
+                }
                 if (number[i] % 2 == 0)
                 {
-                    storeNumber++;
+                    binNumber++;
                 }
             }
-            Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine($"Existem {storeNumber} números inteiros pares acima");
+            Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine($"Existem {binNumber} números inteiros pares acima");
             Console.ReadKey();
         }
     }
