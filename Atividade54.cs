@@ -16,34 +16,34 @@ namespace prj37461_ListaVetores_ex05
                 b) a quantidade de elementos armazenados no vetor que são iguais a 15; 
                 c) a média dos elementos armazenados no vetor que são superiores a 15.
             */
-            int[] numeroInteiro = new int[10];
-            int quantidadeIgual15 = 0, somaInferior15 = 0;
-            double mediaSuperior15, quantidadeSuperior15 = 0;
+            int[] number = new int[10];
+            int equal15 = 0, sum = 0;
+            double average, higher15 = 0;
             for (int i = 0; i < 10; i++)
             {
                 Console.Write("Digite um número inteiro positivo: ");
-                numeroInteiro[i] = int.Parse(Console.ReadLine());
-                while(numeroInteiro[i] < 1)
+                number[i] = int.Parse(Console.ReadLine());
+                while(number[i] < 1)
                 {
                     Console.ForegroundColor = ConsoleColor.Red; Console.Write("ERRO! ");
                     Console.ForegroundColor = ConsoleColor.Gray; Console.Write("Digite um número inteiro positivo: ");
-                    numeroInteiro[i] = int.Parse(Console.ReadLine());
+                    number[i] = int.Parse(Console.ReadLine());
                 }
-                if (numeroInteiro[i] < 15)
+                if (number[i] < 15)
                 {
-                    somaInferior15 += numeroInteiro[i];
+                    sum += number[i];
                 }
-                if (numeroInteiro[i] == 15)
+                if (number[i] == 15)
                 {
-                    quantidadeIgual15++;
+                    equal15++;
                 }
-                if (numeroInteiro[i] > 15)
+                if (number[i] > 15)
                 {
-                    quantidadeSuperior15++;
+                    higher15++;
                 }
             }
-            mediaSuperior15 = quantidadeSuperior15 / numeroInteiro.Length;
-            Console.ForegroundColor = ConsoleColor.DarkCyan; Console.Write($"Soma dos elementos inferiores a 15: {somaInferior15}\nQuantidade de elementos iguais a 15: {quantidadeIgual15}\nMédia dos elementos superiores a 15: {mediaSuperior15}");
+            average15 = higher15 / number.Length;
+            Console.ForegroundColor = ConsoleColor.DarkCyan; Console.Write($"Soma dos elementos inferiores a 15: {sum}\nQuantidade de elementos iguais a 15: {equal15}\nMédia dos elementos superiores a 15: {average15}");
             Console.ReadKey();
         }
     }
