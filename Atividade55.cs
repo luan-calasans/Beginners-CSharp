@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_ListaVetores_ex06
+namespace Atividades
 {
-    internal class C37461_ListaVetores_ex06
+    internal class ex55
     {
         static void Main(string[] args)
         {
