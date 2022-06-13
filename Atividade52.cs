@@ -16,17 +16,24 @@ namespace Atividades
                 armazenados neste vetor.
              */
             int[] number = new int[10];
-            double average, storeOdd = 0;
+            double average, bin = 0, sum = 0;
             for (int i = 0; i < 10; i++)
             {
-                number[i] = i;
+                Console.Write("Digite um número inteiro positivo: ");
+                number[i] = int.Parse(Console.ReadLine());
+                while (number[i] < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red; Console.Write("ERRO! ");
+                    Console.ForegroundColor = ConsoleColor.Gray; Console.Write("Digite um número inteiro positivo: ");
+                    number[i] = int.Parse(Console.ReadLine());
+                }
                 if (number[i] % 2 != 0)
                 {
-                    storeOdd++;
+                    bin++;
+                    sum += number[i];
                 }
-                Console.WriteLine($"Número inteiro: {number[i]}");
             }
-            average = storeOdd / number.Length;
+            average = sum / bin;
             Console.ForegroundColor = ConsoleColor.Yellow; Console.WriteLine($"A média dos número ímpares é: {average}");
             Console.ReadKey();
         }
