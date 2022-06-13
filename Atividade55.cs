@@ -18,32 +18,32 @@ namespace prj37461_ListaVetores_ex06
                 média calculada for superior ou igual a 7 o aluno estará “aprovado”, caso contrário, 
                 a situação do aluno será “reprovado”.
              */
-            string[] aluno = new string[10];
-            double[] nota1 = new double[10], nota2 = new double[10], result = new double[10];
+            string[] student = new string[10];
+            double[] grade1 = new double[10], grade2 = new double[10], result = new double[10];
             Console.WriteLine("================================");
             Console.WriteLine("  MÉDIA BIMESTRAL DE 10 ALUNOS  ");
             Console.WriteLine("================================");
             for (int i = 0; i < 10; i++)
             {
                 Console.Write("Digite seu nome: ");
-                aluno[i] = Console.ReadLine();
+                student[i] = Console.ReadLine();
 
                 Console.Write("Digite sua 1º nota: ");
-                nota1[i] = double.Parse(Console.ReadLine());
+                grade1[i] = double.Parse(Console.ReadLine());
 
                 Console.Write("Digite sua 2º nota: ");
-                nota2[i] = double.Parse(Console.ReadLine());
+                grade2[i] = double.Parse(Console.ReadLine());
 
                 result[i] = (nota1[i] + nota2[i]) / 2;
                 if (result[i] >= 7)
                 {
-                    Console.Write($"Parabéns {aluno[i]}! Você foi ");
+                    Console.Write($"Parabéns {student[i]}! Você foi ");
                     Console.ForegroundColor = ConsoleColor.Green; Console.Write("aprovado(a)"); 
                     Console.ForegroundColor = ConsoleColor.Gray; Console.Write($" com média {result[i]}\n");
                 }
                 else
                 {
-                    Console.Write($"Sinto muito {aluno[i]}! Você foi ");
+                    Console.Write($"Sinto muito {student[i]}! Você foi ");
                      Console.ForegroundColor = ConsoleColor.Red;Console.Write("reprovado(a)");
                     Console.ForegroundColor = ConsoleColor.Gray; Console.Write($" com média {result[i]}\n");
                 }
