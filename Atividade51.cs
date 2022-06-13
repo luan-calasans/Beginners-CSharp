@@ -17,13 +17,20 @@ namespace Atividades
              */
             int[] number = new int[10];
             int sum = 0;
+
             for (int i = 0; i < 10; i++)
-            {                
-                number[i] = i;
-                Console.WriteLine($"Número Inteiro: {number[i]}");
+            {
+                Console.Write("Digite um número inteiro positivo: ");
+                number[i] = int.Parse(Console.ReadLine());
+                while (number[i] < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red; Console.Write("ERRO! ");
+                    Console.ForegroundColor = ConsoleColor.Gray; Console.Write("Digite um número inteiro positivo: ");
+                    number[i] = int.Parse(Console.ReadLine());
+                }
                 sum += number[i];
             }
-            Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine($"A soma dos números inteiros acima é igual a: {sum}");
+            Console.ForegroundColor = ConsoleColor.Blue; Console.WriteLine($"A soma dos números inteiros acima é igual a: {sum}");
             Console.ReadKey();
         }
     }
