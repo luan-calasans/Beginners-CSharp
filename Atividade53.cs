@@ -19,20 +19,26 @@ namespace Atividades
             double storeEven = 0, storeOdd = 0, pcEven, pcOdd;
             for (int i = 0; i < 10; i++)
             {
-                number[i] = i;
+                Console.Write("Digite um número inteiro positivo: ");
+                number[i] = int.Parse(Console.ReadLine());
+                while (number[i] < 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red; Console.Write("ERRO! ");
+                    Console.ForegroundColor = ConsoleColor.Gray; Console.Write("Digite um número inteiro positivo: ");
+                    number[i] = int.Parse(Console.ReadLine());
+                }
                 if (number[i] % 2 == 0)
                 {
-                    storeEven++;
+                    binEven++;
                 }
                 else
                 {
-                    storeOdd++;
+                    binOdd++;
                 }
-                Console.WriteLine($"Número inteiro: {number[i]}");
             }
 
-            pcEven = (storeEven * 100) / number.Length;
-            pcOdd = (storeOdd * 100) / number.Length;
+            pcEven = (binEven * 100) / number.Length;
+            pcOdd = (binOdd * 100) / number.Length;
 
             Console.ForegroundColor = ConsoleColor.DarkCyan; Console.Write($"Percentual de números pares: {pcEven}%\nPercentual de números ímpares: {pcOdd}%");
             Console.ReadKey();
