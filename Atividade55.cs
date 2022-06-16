@@ -4,29 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace prj37461_ListaVetores_ex07
+namespace Atividades
 {
-    internal class C37461_ListaVetores_ex07
+    internal class ex55
     {
         static void Main(string[] args)
         {
             /* Ler 10 elementos inteiros em um vetor A. Montar uma rotina de busca, 
                para pesquisar se um dado elemento X esta armazenado em A. */
-            int contador = 1, numeroPesquisado;
-            int[] numeroInteiro = new int[10];
-            int[] numeroDigitado = new int[10];
+            int count = 1, searchedNumber;
+            int[] number = new int[10];
+            int[] typedNumber = new int[10];
 
             for (int i = 0; i < 10; i++)
             {
-                Console.Write($"{contador}º número: " );
-                numeroDigitado[i] = int.Parse(Console.ReadLine());
-                contador++;
+                Console.Write($"{count}º número: " );
+                typedNumber[i] = int.Parse(Console.ReadLine());
+                count++;
             }
 
             Console.Write("Digite um número a ser pesquisado: ");
-            numeroPesquisado = int.Parse(Console.ReadLine());
+            searchedNumber = int.Parse(Console.ReadLine());
             
-            if (numeroDigitado[9] == numeroPesquisado || numeroDigitado[8] == numeroPesquisado || numeroDigitado[7] == numeroPesquisado || numeroDigitado[6] == numeroPesquisado || numeroDigitado[5] == numeroPesquisado || numeroDigitado[4] == numeroPesquisado || numeroDigitado[3] == numeroPesquisado || numeroDigitado[2] == numeroPesquisado || numeroDigitado[1] == numeroPesquisado || numeroDigitado[0] == numeroPesquisado)
+            if (typedNumber[9] == searchedNumber || typedNumber[8] == searchedNumber || typedNumber[7] == searchedNumber || typedNumber[6] == searchedNumber || typedNumber[5] == searchedNumber || typedNumber[4] == searchedNumber || typedNumber[3] == searchedNumber || typedNumber[2] == searchedNumber || typedNumber[1] == searchedNumber || typedNumber[0] == searchedNumber)
             {
                 Console.Write("O número");
                 Console.ForegroundColor = ConsoleColor.Green; Console.Write(" está ");
