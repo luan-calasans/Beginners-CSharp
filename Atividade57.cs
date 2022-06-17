@@ -17,15 +17,15 @@ namespace Atividades
             int[] number = new int[10];
             int aux;
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < number.Length; i++)
             {
                 Console.Write("Digite um número: ");
                 number[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int x = 0; x < 9; x++)
+            for (int x = 0; x < number.Length; x++)
             {
-                for (int y = x + 1; y < 10; y++)
+                for (int y = x + 1; y < number.Length; y++)
                 {
                     if (number[x] > number[y])
                     {
@@ -38,7 +38,7 @@ namespace Atividades
 
             Console.Write("Ordem dos números digitados: ");
 
-            for (int z = 0; z < 10; z++)
+            for (int z = 0; z < number.Length; z++)
             {
                 Console.Write($" {number[z]} ");
             }
