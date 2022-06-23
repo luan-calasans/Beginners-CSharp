@@ -10,6 +10,14 @@ namespace Atividades
     {
         static void Main(string[] args)
         {
+            /*
+            Fazer um programa para entrar via teclado com dez valores positivos. 
+            Consistir a digitação e enviar mensagem de erro, se necessário. Após a digitação, exibir: 
+            a. O maior valor; 
+            b. A soma dos valores; 
+            c. A média aritmética dos valores; 
+            */
+            
             int highestValue = 0;
             double average = 0, sum = 0;
             int[] number = new int[10];
