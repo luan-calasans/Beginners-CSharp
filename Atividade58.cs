@@ -10,6 +10,13 @@ namespace Atividades
     {
         static void Main(string[] args)
         {
+            /*
+            Fazer um programa onde serão digitados números aleatoriamente até que a soma dos números pares 
+            digitados seja maior que 100 ou sejam digitados no máximo 10 números quaisquer, ou seja, 
+            no décimo número digitado para a digitação independente do valor da soma. 
+            Ao final seu programa deverá exibir a soma dos números ímpares. 
+            */
+            
             int cont = 0, number;
             double evenSum = 0, oddSum = 0;
             do
