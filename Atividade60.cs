@@ -20,6 +20,7 @@ namespace Atividades
             Console.CursorVisible = false;
             Console.ReadKey();
         }
+        
         private static double calc()
         {
             return (p1 + p2) / 2;
